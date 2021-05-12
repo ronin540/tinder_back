@@ -45,6 +45,14 @@ app.get('/tinder/cards', (req, res ) => {
     })
 })
 
+app.get('/', (req, res ) => {
+    Cards.find((err, data) => {
+        if(err) {
+           return res.status(500).send(err);
+        } 
+        res.status(201).send("hello world");
+    })
+})
 //listener
 
 app.listen(port, () => console.log(`Listening to ${port}`))
