@@ -1,0 +1,21 @@
+#home
+#  GET http://localhost:8001
+
+
+
+# POST  http://localhost:8080/tinder/card HTTP/1.1
+# Content-Type: application/json
+
+# [
+#     {
+#         "name": "Elon Musk",
+#         "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg"
+#     },
+#     {
+#          "name": "Jeff Bezos",
+#             "imgUrl" : "https://media.wired.com/photos/6019cab23453f789506008d0/master/w_2560%2Cc_limit/Sec_Bezos_1036084400.jpg"     
+#         }
+#     ]
+
+ GET   http://localhost:8080/tinder/cards HTTP/1.1
+ Content-Type: application/json
